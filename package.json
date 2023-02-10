@@ -1,0 +1,22 @@
+{
+  "publisher": "Kongkiat",
+  "name": "thymeleaf-snippets",
+  "displayName": "Thymeleaf Snippets",
+  "description": "",
+  "icon": "image/icon.png",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

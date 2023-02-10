@@ -1,0 +1,209 @@
+{
+    "th:text": {
+        "prefix": [
+            "thtext",
+        ],
+        "body": [
+            "th:text=\"${${1:variable}}\""
+        ],
+        "description": "Display dynamic text in a template."
+    },
+    "th:utext": {
+        "prefix": [
+            "thutext",
+        ],
+        "body": [
+            "th:utext=\"${${1:variable}}\""
+        ],
+        "description": "Display dynamic text in a template, while escaping special characters to prevent XSS attacks."
+    },
+    "th:value": {
+        "prefix": [
+            "thvalue",
+        ],
+        "body": [
+            "th:value=\"${${1:variable}}\""
+        ],
+        "description": "Set the value of an input field, select element, or textarea."
+    },
+    "th:if": {
+        "prefix": [
+            "thif",
+        ],
+        "body": [
+            "th:if=\"${${1:variable}}\""
+        ],
+        "description": "Conditionally include or exclude content based on a Boolean expression."
+    },
+    "th:unless": {
+        "prefix": [
+            "thunless",
+        ],
+        "body": [
+            "th:unless=\"${${1:variable}}\""
+        ],
+        "description": "Conditionally exclude content based on a Boolean expression."
+    },
+    "th:each": {
+        "prefix": [
+            "theach",
+        ],
+        "body": [
+            "th:each=\"${1:item} : ${${2:item}}\""
+        ],
+        "description": "Iterate over a collection of objects and display the data for each one."
+    },
+    "th:object": {
+        "prefix": [
+            "thobject",
+        ],
+        "body": [
+            "th:object=\"${${1:variable}}\""
+        ],
+        "description": "Bind form data to a specific object in the model"
+    },
+    "th:href": {
+        "prefix": [
+            "thhref",
+        ],
+        "body": [
+            "th:href=\"@{${1:url}}\""
+        ],
+        "description": "Dynamically set the destination URL for a hyperlink."
+    },
+    "th:src": {
+        "prefix": [
+            "thsrc",
+        ],
+        "body": [
+            "th:src=\"@{${1:url}}\""
+        ],
+        "description": "Dynamically set the source URL for an image or other media resource."
+    },
+    "th:style": {
+        "prefix": [
+            "thstyle",
+        ],
+        "body": [
+            "th:style=\"${${1:variable}} == '${2:conditional}'} ? '${3:true}' : '${4:false}'\""
+        ],
+        "description": "Set the inline style for an element."
+    },
+    "th:field": {
+        "prefix": [
+            "thfield",
+        ],
+        "body": [
+            "th:field=\"*{${1:name}}\""
+        ],
+        "description": "Bind form field values to a specific property of a model object."
+    },
+    "th:action": {
+        "prefix": [
+            "thaction",
+        ],
+        "body": [
+            "th:action=\"@{${1:variable}}\""
+        ],
+        "description": "Specify the URL for form submissions."
+    },
+    "th:classappend": {
+        "prefix": [
+            "thclassappend",
+        ],
+        "body": [
+            "th:classappend=\"${${1:variable}} == '${2:conditional}'} ? '${3:true}' : '${4:false}'\""
+        ],
+        "description": "Specify the URL for form submissions."
+    },
+    "th:attr": {
+        "prefix": [
+            "thattr",
+        ],
+        "body": [
+            "th:attr=\"data-${1:attribute}=${${2:variable}}\""
+        ],
+        "description": "Set arbitrary attributes for an element."
+    },
+    "th:fragment": {
+        "prefix": [
+            "thfragment",
+        ],
+        "body": [
+            "th:fragment=\"${${content}}\""
+        ],
+        "description": "Define a reusable fragment of HTML that can be included in multiple templates."
+    },
+    "th:replace": {
+        "prefix": [
+            "threplace",
+        ],
+        "body": [
+            "th:replace=\"${1:fragment} :: ${2:content}\""
+        ],
+        "description": "Replace the contents of an element with the contents of a named fragment."
+    },
+    "th:include": {
+        "prefix": [
+            "thinclude",
+        ],
+        "body": [
+            "th:include=\"${1:common-header} :: ${2:header}\""
+        ],
+        "description": "Include the contents of another template in the current template."
+    },
+    "th:block": {
+        "prefix": [
+            "thblock",
+        ],
+        "body": [
+            "th:block=\"${1:title}\""
+        ],
+        "description": "Define a block of content that can be overridden by templates that extend the current template."
+    },
+    "th:switch": {
+        "prefix": [
+            "thswitch",
+        ],
+        "body": [
+            "th:switch=\"${${1:data}}\""
+        ],
+        "description": "Conditionally include content based on the value of a variable."
+    },
+    "th:case": {
+        "prefix": [
+            "thcase",
+        ],
+        "body": [
+            "th:case=\"${1:anything}\""
+        ],
+        "description": "Conjunction with th:switch to define a case in a switch statement."
+    },
+    "th:with": {
+        "prefix": [
+            "thwith",
+        ],
+        "body": [
+            "th:with=\"${1:anything}\""
+        ],
+        "description": "Expose a specific object in the model as a local variable, making it easier to access in the template."
+    },
+    "th:insert": {
+        "prefix": [
+            "thinsert",
+        ],
+        "body": [
+            "th:insert=\"${1:anything} :: ${2:anything}\""
+        ],
+        "description": "Include the contents of another template in the current template, replacing the contents of an element with an ID that matches the name of the included template."
+    },
+    "th:remove": {
+        "prefix": [
+            "thremove",
+        ],
+        "body": [
+            "th:remove=\"${1|all,body,tag,all-but-first,none|}\""
+        ],
+        "description": "Remove an element from the template, including its contents."
+    },
+}
